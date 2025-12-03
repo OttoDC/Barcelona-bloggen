@@ -4,14 +4,15 @@
   "description": "Det her er min FC Barcelona blog, som jeg lavede i min praktikuge i 9. klasse.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OttoDC/Barcelona-bloggen.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Otto DC",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {

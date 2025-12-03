@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+
+<article>
+    <h1>{{ title }}</h1>
+    <p><em>{{ date | daDato }}</em></p>
+
+    {{ content | safe }}
+
+    <p><a href="/blog/">← Tilbage til blog</a></p>
+</article>
