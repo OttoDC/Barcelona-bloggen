@@ -1,0 +1,24 @@
+{
+  "name": "barcelona-bloggen",
+  "version": "1.0.0",
+  "description": "Det her er min FC Barcelona blog, som jeg lavede i min praktikuge i 9. klasse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OttoDC/Barcelona-bloggen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OttoDC/Barcelona-bloggen/issues"
+  },
+  "homepage": "https://github.com/OttoDC/Barcelona-bloggen#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
