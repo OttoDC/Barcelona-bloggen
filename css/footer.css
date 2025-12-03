@@ -1,0 +1,5 @@
+footer {
+    padding: 20px;
+    max-width: var(--barca-page-width);
+    margin-inline: auto;
+}
