@@ -1,5 +1,5 @@
 header {
-    background-image: url(../images/Catalonien\ flag.svg);
+    background: linear-gradient(var(--barca-blue), var(--barca-blue-dark));
     background-size: auto 100%;
 
 
@@ -21,7 +21,7 @@ header {
 
     a {
         font-weight: 800;
-        background-color: var(--barca-light-high-transparent);
+        background-color: var(--barca-pink-high-transparent);
         padding: 0.3em 0.6em;
         text-decoration: none;
         color: var(--barca-dark);
@@ -30,7 +30,7 @@ header {
         transition: all 300ms;
 
         &:hover {
-           background-color: var(--barca-light-low-transparent);
+           background-color: var(--barca-pink-low-transparent);
            color: var(--barca-blue);
            transform: scale(1.09);
         }

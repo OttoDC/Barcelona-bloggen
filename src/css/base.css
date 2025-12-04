@@ -4,24 +4,26 @@
 
     /* Farver */
     --barca-blue: #004D98;
+    --barca-blue-dark: #002851;
     --barca-red: #A50044;
     --barca-red-dark: #710331;
     --barca-yellow: #FFED00;
     --barca-dark: #1a1a2e;
-    --barca-light: rgb(247, 215, 220);
-    --barca-light-low-transparent: rgba(247, 215, 220, 0.95);
-    --barca-light-high-transparent: rgba(247, 215, 220, 0.85);
+    --barca-pink: rgb(247, 215, 220);
+    --barca-pink-dark: rgb(246, 183, 193);
+    --barca-pink-low-transparent: rgba(247, 215, 220, 0.95);
+    --barca-pink-high-transparent: rgba(247, 215, 220, 0.85);
 
     /* Semantiske farver */
     --color-heading: var(--barca-blue);
     --color-link: var(--barca-red);
     --color-link-hover: var(--barca-red-dark);
     --color-text: var(--barca-dark);
-    --color-background: var(--barca-light);
+    --color-background: var(--barca-pink);
 }
 
 body {
-    background-color: var(--color-background);
+    background: linear-gradient(var(--barca-pink), var(--barca-pink-dark));
     color: var(--color-text);
     font-size: 18px;
     margin: 0;
