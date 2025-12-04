@@ -7,13 +7,20 @@ title: Blog
 
 <h2>Kampe</h2>
 <p>Herunder har jeg lavet artikler om deres kampe</p>
+
 <ul>
-    <li><a href="/blog/barcelona-vs-atletico-madrid-2-12-2025">Barcelona vs Atletico Madrid 2. december 2025</a></li>
+    {% for post in collections.kampe %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
 </ul>
+
 <hr/>
+
 <h2>Spillere</h2>
-    <p>Herunder har jeg lavet artikler om Barcelona spillere</p>
+<p>Herunder har jeg lavet artikler om Barcelona spillere</p>
+
 <ul>
-    <li><a href="/blog/lamine-yamal">Lamine Yamal</a></li>
-    <li><a href="/blog/pedri">Pedri</a></li>
+    {% for post in collections.spillere %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
 </ul>
