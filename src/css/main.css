@@ -4,15 +4,15 @@ main {
     margin-inline: auto;
 
     a {
-        background-color: rgba(215, 206, 253, 0.6);
-        color: blue;
-        font-size: 18px;
+        color: var(--color-link);
         transition: all 300ms;
 
         &:hover {
-            background-color: rgba(215, 206, 253, 0.88);
-            color: rgb(3, 3, 131);
+            color: var(--barca-red-dark);
 
         }
+    }
+    li {
+        margin-block-end: 0.6em;
     }
 }

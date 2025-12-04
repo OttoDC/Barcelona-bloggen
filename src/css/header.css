@@ -21,17 +21,17 @@ header {
 
     a {
         font-weight: 800;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: var(--barca-light-high-transparent);
         padding: 0.3em 0.6em;
         text-decoration: none;
-        color: black;
+        color: var(--barca-dark);
         border-radius: 10px;
         font-size: 18px;
         transition: all 300ms;
 
         &:hover {
-           background-color: rgba(255, 255, 255, 0.95); 
-           color: blue;
+           background-color: var(--barca-light-low-transparent);
+           color: var(--barca-blue);
            transform: scale(1.09);
         }
     }

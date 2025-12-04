@@ -1,12 +1,35 @@
 :root {
     /* CSS Variabler */
     --barca-page-width: 1100px;
+
+    /* Farver */
+    --barca-blue: #004D98;
+    --barca-red: #A50044;
+    --barca-red-dark: #710331;
+    --barca-yellow: #FFED00;
+    --barca-dark: #1a1a2e;
+    --barca-light: rgb(247, 215, 220);
+    --barca-light-low-transparent: rgba(247, 215, 220, 0.95);
+    --barca-light-high-transparent: rgba(247, 215, 220, 0.85);
+
+    /* Semantiske farver */
+    --color-heading: var(--barca-blue);
+    --color-link: var(--barca-red);
+    --color-link-hover: var(--barca-red-dark);
+    --color-text: var(--barca-dark);
+    --color-background: var(--barca-light);
 }
 
 body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 18px;
     margin: 0;
     font-family: sans-serif;
-    background-color: #f7d7dc;
+}
+
+h1, h2, h3 {
+    color: var(--color-heading);
 }
 
 * {
@@ -14,7 +37,6 @@ body {
 }
 
 h1 {
-    color: #004D98;
     font-family: 'Gill Sans', sans-serif;
     font-weight: 650;
     margin: 0;
