@@ -1,8 +1,27 @@
+const markdownIt = require('markdown-it');
+const markdownItLinkAttributes = require('markdown-it-link-attributes');
+
 module.exports = function (eleventyConfig) {
 
-    // Kopier css og images til output
+    // Markdown config – eksterne links åbner i nyt vindue
+    const md = markdownIt({
+        html: true
+    }).use(markdownItLinkAttributes, {
+        matcher(href) {
+            return href.startsWith('http');
+        },
+        attrs: {
+            target: '_blank',
+            rel: 'noopener'
+        }
+    });
+
+    eleventyConfig.setLibrary('md', md);
+
+    // Kopier filer
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPassthroughCopy("src/js");
 
     // Dansk datoformatering
     eleventyConfig.addFilter("daDato", function (date) {
