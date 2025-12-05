@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/js");
+    eleventyConfig.addPassthroughCopy("src/favicons");
 
     // Dansk datoformatering
     eleventyConfig.addFilter("daDato", function (date) {
