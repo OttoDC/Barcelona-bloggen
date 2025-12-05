@@ -3,6 +3,7 @@ main {
     padding: 20px;
     max-width: var(--barca-page-width);
     margin-inline: auto;
+    animation: fadeIn 0.4s ease-out;
 
     a {
         color: var(--color-link);
